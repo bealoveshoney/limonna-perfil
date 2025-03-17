@@ -1,0 +1,115 @@
+/*Estilo para el contenedor*/
+
+/* index.html*/
+/*******************************************************************/
+
+/*Estilo para el contenedor*/
+
+#ingreso{
+    margin-top: 7em;
+    max-width: 25em;
+    
+}
+
+/*Estilo para el botón de ingresar*/
+
+#botonIngresar{
+   
+    margin-top: 0.5em;
+     
+}
+
+/*Media query para formulario*/
+
+@media (max-width: 550px) {
+    #botonIngresar{
+        position: relative;
+        max-width: 10em;
+        left: 3em;
+    }
+
+    #inputPass{
+        position: relative;
+        max-width: 10em;
+        left: 3em;
+    }
+
+    #inputUsuario{
+        position: relative;
+        max-width: 10em;
+        left: 3em;
+    }
+}
+
+
+/*Perfil*/
+
+#div-usuario {
+ background-color: #014D49;
+ color: white;
+ padding: 2em;
+ display: flex; /* Para centrar contenido */
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ 
+}
+
+#usuario_logo {
+    height:  20em;
+    margin: 2em;
+    border-radius: 20em;
+}
+
+.logos {
+    height: 3em;
+    text-align: center;
+}
+
+/* Estilos generales */
+body {
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Modo nocturno */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Opcional: Estilos para botones e imágenes en modo nocturno */
+.dark-mode #modo-nocturno {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+}
+
+.dark-mode img {
+    filter: brightness(0.8); /* Ajustar brillo de imágenes en modo nocturno */
+}
+
+/* Navbar en modo nocturno */
+.dark-mode .navbar {
+    background-color: #1c1c1c !important; /* Fondo oscuro */
+}
+
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar .navbar-brand {
+    color: white !important; /* Color de texto */
+}
+
+.dark-mode .navbar .nav-link:hover {
+    color: #a8dadc !important; /* Color al pasar el mouse */
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #333 !important; /* Fondo del dropdown */
+}
+
+.dark-mode .dropdown-menu .dropdown-item {
+    color: white !important; /* Color de los elementos del dropdown */
+}
+
+.dark-mode .dropdown-menu .dropdown-item:hover {
+    background-color: #555 !important; /* Color al pasar el mouse */
+}
